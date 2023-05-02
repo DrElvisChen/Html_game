@@ -106,7 +106,7 @@ function startGame() {
         alert('Game over!');
       }
     }
-  }, 100);
+  }, 50);
 }
 
 function pauseGame() {
