@@ -95,7 +95,11 @@ function startGame() {
   isPaused = false;
   score = 0;
   scoreElem.textContent = `Score: ${score}`;
-  snake = [{x: 5, y: 5}];
+  // Update the initial position of the snake
+  snake = [
+    { x: NUM_COLS / 2, y: NUM_ROWS / 2 },
+    { x: NUM_COLS / 2 - 1, y: NUM_ROWS / 2 }
+  ];
   createFood();
   intervalId = setInterval(() => {
     if (!isPaused) {
@@ -108,6 +112,7 @@ function startGame() {
     }
   }, 50);
 }
+
 
 function pauseGame() {
   isPaused = true;
