@@ -1,6 +1,6 @@
 const canvas = document.getElementById('game-canvas');
-canvas.width = 500;
-canvas.height = 300;
+canvas.width = 400;
+canvas.height = 250;
 const ctx = canvas.getContext('2d');
 const startBtn = document.getElementById('start-btn');
 const pauseBtn = document.getElementById('pause-btn');
@@ -125,7 +125,7 @@ function startGame() {
         alert('Game over!');
       }
     }
-  }, 50);
+  }, 30);
 }
 
 
