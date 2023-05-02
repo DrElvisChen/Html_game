@@ -1,6 +1,6 @@
 const canvas = document.getElementById('game-canvas');
-canvas.width = 600;
-canvas.height = 400;
+canvas.width = 500;
+canvas.height = 300;
 const ctx = canvas.getContext('2d');
 const startBtn = document.getElementById('start-btn');
 const pauseBtn = document.getElementById('pause-btn');
