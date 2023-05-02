@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+#game-canvas {
+  border: 1px solid #333;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#score {
+  font-size: 24px;
+}
