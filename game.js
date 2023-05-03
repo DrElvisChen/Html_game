@@ -125,7 +125,7 @@ function startGame() {
         alert('Game over!');
       }
     }
-  }, 30);
+  }, 40);
 }
 
 
