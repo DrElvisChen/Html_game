@@ -30,8 +30,8 @@ function init() {
 }
 
 function createFood() {
-  const edgeDist = 0; // distance from the edges
-  const borderProb = 0.6; // probability of appearing near the border
+  const edgeDist = 2; // distance from the edges
+  const borderProb = 0.7; // probability of appearing near the border
   const xRange = NUM_COLS - edgeDist * 2;
   const yRange = NUM_ROWS - edgeDist * 2;
   do {
