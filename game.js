@@ -1,6 +1,6 @@
 const canvas = document.getElementById('game-canvas');
-canvas.width = 400;
-canvas.height = 250;
+canvas.width = 600;
+canvas.height = 400;
 const ctx = canvas.getContext('2d');
 const startBtn = document.getElementById('start-btn');
 const pauseBtn = document.getElementById('pause-btn');
@@ -30,7 +30,7 @@ function init() {
 }
 
 function createFood() {
-  const edgeDist = 2; // distance from the edges
+  const edgeDist = 1; // distance from the edges
   const borderProb = 0.7; // probability of appearing near the border
   const xRange = NUM_COLS - edgeDist * 2;
   const yRange = NUM_ROWS - edgeDist * 2;
@@ -91,7 +91,6 @@ function moveSnake() {
   }
   snake.unshift(newHead);
 }
-
 
 function isGameOver() {
   const head = snake[0];
