@@ -92,6 +92,7 @@ function moveSnake() {
   snake.unshift(newHead);
 }
 
+
 function isGameOver() {
   const head = snake[0];
   return (
